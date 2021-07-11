@@ -9,6 +9,14 @@ public class Config {
     public boolean spawnCoreLava;
     public float coreExplosionSize;
     public double coreExplosionChance;
+
+    public int redDwarfFireDuration;
+    public int orangeDwarfFireDuration;
+    public int yellowGiantFireDuration;
+    public int yellowSuperGiantFireDuration;
+
+
+
     private final String CATEGORY_GENERAL = "general";
 
     public Configuration config;
@@ -26,6 +34,11 @@ public class Config {
         this.spawnCoreLava = config.get(CATEGORY_GENERAL, "SpawnCoreLava", true).getBoolean();
         this.coreExplosionSize = (float) config.get(CATEGORY_GENERAL, "CoreExplosionSize", 4.0).getDouble();
         this.coreExplosionChance = config.get(CATEGORY_GENERAL, "CoreExplosionChance", 0.5, "how often does an explosion occur, 1.0 = always, 0.0 = never, 0.5 = 50%").setMaxValue(1.0).setMinValue(0.0).getDouble();
+
+        this.redDwarfFireDuration = config.get(CATEGORY_GENERAL, "redDwarfFireDuration", 2).getInt();
+        this.orangeDwarfFireDuration = config.get(CATEGORY_GENERAL, "orangeDwarfFireDuration", 3).getInt();
+        this.yellowGiantFireDuration = config.get(CATEGORY_GENERAL, "yellowGiantFireDuration", 4).getInt();
+        this.yellowSuperGiantFireDuration = config.get(CATEGORY_GENERAL, "yellowSuperGiantFireDuration", 5).getInt();
 
         if (config.hasChanged()) {
             config.save();

@@ -23,6 +23,9 @@ import java.util.Random;
 
 public class StarSurface extends Block {
 
+    protected int fireDuration = 0;
+
+
     public StarSurface() {
         super(Material.rock);
         setCreativeTab(CreativeTabs.tabBlock);
@@ -48,6 +51,7 @@ public class StarSurface extends Block {
     public void onEntityCollidedWithBlock(World p_149670_1_, int p_149670_2_, int p_149670_3_, int p_149670_4_, Entity entity) {
         if(entity instanceof EntityLivingBase){
             entity.attackEntityFrom(new DamageSource("starSurface"), RealStars.config.surfaceDamage);
+            entity.setFire(this.fireDuration);
         }
     }
 

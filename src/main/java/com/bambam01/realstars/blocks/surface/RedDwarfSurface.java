@@ -10,5 +10,7 @@ public class RedDwarfSurface extends StarSurface {
         super();
         setBlockName(name);
         setBlockTextureName(RealStars.MODID + ":" + name);
+        this.fireDuration = RealStars.config.redDwarfFireDuration;
+
     }
 }

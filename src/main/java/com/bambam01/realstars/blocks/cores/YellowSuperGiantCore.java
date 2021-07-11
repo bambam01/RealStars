@@ -10,5 +10,7 @@ public class YellowSuperGiantCore extends StarCore {
         super();
         setBlockName(name);
         setBlockTextureName(RealStars.MODID + ":" + name);
+        this.fireDuration = RealStars.config.yellowSuperGiantFireDuration;
+
     }
 }

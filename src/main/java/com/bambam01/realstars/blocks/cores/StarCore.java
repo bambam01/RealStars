@@ -25,6 +25,8 @@ import java.util.Random;
 
 public class StarCore extends Block {
 
+    protected int fireDuration = 0;
+
     public StarCore() {
         super(Material.rock);
         setCreativeTab(CreativeTabs.tabBlock);
@@ -100,6 +102,7 @@ public class StarCore extends Block {
     public void onEntityCollidedWithBlock(World p_149670_1_, int p_149670_2_, int p_149670_3_, int p_149670_4_, Entity entity) {
         if(entity instanceof EntityLivingBase){
             entity.attackEntityFrom(new DamageSource("starCore"), RealStars.config.coreDamage);
+            entity.setFire(this.fireDuration);
         }
     }
 

@@ -10,5 +10,7 @@ public class YellowGiantSurface extends StarSurface {
         super();
         setBlockName(name);
         setBlockTextureName(RealStars.MODID + ":" + name);
+        this.fireDuration = RealStars.config.yellowGiantFireDuration;
+
     }
 }
