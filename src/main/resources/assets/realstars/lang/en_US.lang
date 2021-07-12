@@ -1,14 +1,14 @@
 tile.orangedwarfcore.name=Orange Dwarf Core
 tile.reddwarfcore.name=Red Dwarf Core
 tile.yellowgiantcore.name=Yellow Giant Core
-tile.yellowsupergiantcore.name=Yellow Supper Giant Core
+tile.yellowsupergiantcore.name=Yellow Super Giant Core
 
 tile.orangedwarfsurface.name=Orange Dwarf Surface
 tile.reddwarfsurface.name=Red Dwarf Surface
 tile.yellowgiantsurface.name=Yellow Giant Surface
-tile.yellowsupergiantsurface.name=Yellow Supper Giant Surface
+tile.yellowsupergiantsurface.name=Yellow Super Giant Surface
 
-death.attack.starCore=Did you know the core of a star can generate up to 390 Septilion Joule per seccond, that is the same as 671 Quadrillion Nuclear reactors. %1$s found out that you probably don't want to stand on that.
+death.attack.starCore=Did you know the core of a star can generate up to 390 Septilion Joule per second, that is the same as 671 Quadrillion Nuclear reactors. %1$s found out that you probably don't want to stand on that.
 death.attack.starCore.player=%2$s just killed %1$s while fighting on a star, how cool is that.
 
 death.attack.starSurface=Did you know the surface of a star can reach temperatures up to 100 million Kelvins? %1$s didn't know that.
